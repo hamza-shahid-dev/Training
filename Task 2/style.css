@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Lexend Deca", sans-serif;
+  background: #093545 url(assets/Vectors.svg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  color: #ffffff;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.login-container {
+  width: 100%;
+  max-width: 450px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+}
+
+.login-card {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.login-content {
+  display: flex;
+  flex-direction: column;
+  gap: 45px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.heading h1 {
+  font-size: 64px;
+  font-weight: 400;
+  letter-spacing: -0.5px;
+}
+
+.content p {
+  font-size: 16px;
+  color: #ffffff;
+  font-weight: 270;
+  white-space: nowrap;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 300px;
+  margin: 0 auto;
+}
+
+.login-form .input-group:first-of-type {
+  margin-bottom: 18px;
+}
+
+.input-group input {
+  width: 300px;
+  height: 45px;
+  padding: 0 16px;
+  background-color: #224957;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 15px;
+  outline: none;
+  transition: border-color 0.2s;
+}
+
+.input-group input::placeholder {
+  color: #ffffff;
+  font-size: 14px;
+  font-weight: 280;
+}
+
+.input-group input:focus {
+  border-color: #00b4d8;
+}
+
+.login-options {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  font-weight: 250;
+  color: #ffffff;
+  padding: 4px 0;
+}
+
+.login-options label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+}
+
+.login-options input[type="checkbox"] {
+  appearance: none;
+  -webkit-appearance: none;
+  width: 18px;
+  height: 18px;
+  background-color: #224957;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  position: relative;
+}
+
+.login-options input[type="checkbox"]:checked {
+  background-color: #224957;
+}
+
+.login-options input[type="checkbox"]:checked::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  top: 2px;
+  width: 4px;
+  height: 9px;
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+}
+
+.forgot-password {
+  color: #20df7f;
+  text-decoration: none;
+  font-weight: 250;
+  transition: opacity 0.2s;
+}
+
+.forgot-password:hover {
+  opacity: 0.8;
+}
+
+button[type="submit"] {
+  width: 300px;
+  height: 45px;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #20df7f;
+  border: none;
+  border-radius: 8px;
+  color: #ffffff;
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  cursor: pointer;
+  transition:
+    opacity 0.2s,
+    transform 0.1s;
+  margin-top: 8px;
+}
+
+button[type="submit"]:hover {
+  opacity: 0.95;
+}
+
+button[type="submit"]:active {
+  transform: scale(0.98);
+}
+
+footer {
+  position: absolute;
+  bottom: 24px;
+  left: 24px;
+  z-index: 10;
+}
+
+.darkmode {
+  width: 70px;
+  height: 70px;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  .heading h1 {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  body {
+    background-size: 100%;
+    padding: 16px;
+  }
+
+  .login-container {
+    padding: 10px;
+    max-width: 100%;
+  }
+
+  .login-card {
+    gap: 24px;
+    width: 100%;
+  }
+
+  .login-content {
+    width: 100%;
+  }
+
+  .content p {
+    font-size: 14px;
+    white-space: normal; 
+    padding: 0 10px;
+  }
+
+  .heading h1 {
+    font-size: 38px;
+  }
+
+  .login-form,
+  .login-options,
+  .input-group input,
+  button[type="submit"] {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media screen and (max-width: 340px) {
+  .heading h1 {
+    font-size: 32px;
+  }
+
+  .login-options {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .darkmode {
+    width: 50px;
+    height: 50px;
+  }
+  
+  footer {
+    bottom: 16px;
+    left: 16px;
+  }
+}
