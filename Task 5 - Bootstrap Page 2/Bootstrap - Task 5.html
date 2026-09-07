@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap - Task. 4</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <!-- navbar starts here -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white pt-4 px-5">
+        <a class="navbar-brand" href="#">
+            <img src="assets/Logo.svg" width="120px" alt="Company Logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarText">
+            <ul class="navbar-nav mx-auto">
+                <li class="nav-item active pl-md-3 pr-md-4">
+                    <a class="nav-link" href="#">About <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item pr-md-4">
+                    <a class="nav-link" href="#">Features</a>
+                </li>
+                <li class="nav-item pr-md-4">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item pr-md-4">
+                    <a class="nav-link" href="#">Testimonials</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Help</a>
+                </li>
+            </ul>
+            <a class="nav-link text-dark text-nowrap" href="#">Sign in</a>
+            <a class="btn btn-outline-danger rounded-pill px-5 text-nowrap" href="#">Sign up</a>
+
+        </div>
+    </nav>
+    <!-- navbar ends here...  -->
+
+    <!-- hero section starts here...  -->
+    <section class="hero-section bg-white py-5">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+
+                <div class="col-md-6 text-center text-md-left mb-4 mb-md-0">
+                    <h1 class="display-4 mb-3" style="font-size: 50px; font-weight: 500; color: #0B132A;">
+                        Want anything to be easy with <span class="font-weight-bold">LaslesVPN.</span>
+                    </h1>
+
+                    <p class="text-muted mb-4" style="color: #4F5665; font-weight: 400;">
+                        Provide a network for all your needs with ease and fun using LaslesVPN discover interesting
+                        features from us.
+                    </p>
+
+                    <a href="#" class="d-inline-block ml-n4">
+                        <img src="assets/get started.svg" class="img-fluid" alt="Get Started Button"
+                            style="max-width: 200px;">
+                    </a>
+                </div>
+
+                <div class="col-md-6 text-center">
+                    <img src="assets/Illustration 1.svg" class="img-fluid" alt="Hero Illustration">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- hero section ends here...  -->
+
+    <!-- showcase section...  -->
+    <section class="py-5 bg-white">
+        <div class="container d-flex justify-content-center">
+
+            <div class="position-relative w-100" style="max-width: 1000px;">
+
+                <!-- blur image -->
+                <div class="position-absolute w-100" style="top: 8%; left: 0; z-index: 1;">
+                    <img src="assets/Rectangle 264.svg" class="w-100 img-fluid" alt="Blurry Image">
+                </div>
+
+                <!-- base image -->
+
+                <div class="w-100 position-relative" style="z-index: 2;">
+                    <img src="assets/Rectangle 252.svg" class="w-100 img-fluid" alt="Base White Bg Image">
+                </div>
+
+                <!-- icons and texts images on base image -->
+                <!-- user icon  -->
+                <div class="position-absolute" style="top: 30%; left: 10%; width: 5.5%; z-index: 3;">
+                    <img src="assets/user.svg" class="w-100 img-fluid" alt="user icon">
+                </div>
+
+                <!-- user text image -->
+                <div class="position-absolute" style="top: 30%; left: 17%; width: 5.5%; z-index: 4;">
+                    <img src="assets/Group 1129.svg" class="w-100 img-fluid" alt="user text">
+                </div>
+
+                <!-- divider image -->
+                <div class="position-absolute" style="top: 25%; left: 33%; height: 50%; width: 1px; z-index: 5;">
+                    <img src="assets/Vector 14.svg" class="h-100 img-fluid" alt="divider">
+                </div>
+
+                <!-- location icon -->
+                <div class="position-absolute" style="top: 30%; left: 42%; width: 5.5%; z-index: 6;">
+                    <img src="assets/location.svg" class="w-100 img-fluid" alt="location icon">
+                </div>
+
+                <!-- location text image -->
+                <div class="position-absolute" style="top: 34%; left: 49%; width: 7.5%; z-index: 7;">
+                    <img src="assets/Group 1131.svg" class="w-100 img-fluid" alt="location text">
+                </div>
+
+                <!-- divider image -->
+                <div class="position-absolute" style="top: 25%; left: 66%; height: 50%; width: 1px; z-index: 8;">
+                    <img src="assets/Vector 15.svg" class="h-100 img-fluid" alt="divider">
+                </div>
+
+                <!-- server icon -->
+                <div class="position-absolute" style="top: 30%; left: 75%; width: 5.5%; z-index: 9;">
+                    <img src="assets/Server.svg" class="w-100 img-fluid" alt="server icon">
+                </div>
+
+                <!-- server icon text -->
+                <div class="position-absolute" style="top: 32%; left: 82%; width: 6.5%; z-index: 10;">
+                    <img src="assets/Group 1133.svg" class="w-100 img-fluid" alt="server icon text">
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- showcase section ends here...  -->
+
+    <!-- feature section...  -->
+    <section class="py-5 bg-white">
+        <div class="container py-lg-5">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-5 mb-md-0">
+                    <img src="assets/Illustration 2.svg" class="img-fluid" alt="Features Illustration"
+                        style="max-width: 85%;">
+                </div>
+
+                <div class="col-md-6 pl-md-5">
+                    <h2 class="font-weight-bold mb-3 text-dark style-heading"
+                        style="font-size: 38px; line-height: 1.3;">
+                        We Provide Many <br class="d-none d-lg-block"> Features You Can Use
+                    </h2>
+
+                    <p class="text-muted mb-4" style="font-size: 15px; line-height: 1.6;">
+                        You can explore the features that we provide with fun and have their own functions each feature.
+                    </p>
+
+                    <ul class="list-unstyled feature-list">
+
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="assets/Group 1120.svg" class="mr-3" width="24" height="24" alt="Checkmark">
+                            <span class="text-muted" style="font-size: 14px;">Powerfull online protection.</span>
+                        </li>
+
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="assets/Group 1120.svg" class="mr-3" width="24" height="24" alt="Checkmark">
+                            <span class="text-muted" style="font-size: 14px;">Internet without borders.</span>
+                        </li>
+
+                        <li class="d-flex align-items-center mb-3">
+                            <img src="assets/Group 1120.svg" class="mr-3" width="24" height="24" alt="Checkmark">
+                            <span class="text-muted" style="font-size: 14px;">Supercharged VPN</span>
+                        </li>
+
+                        <li class="d-flex align-items-center mb-0">
+                            <img src="assets/Group 1120.svg" class="mr-3" width="24" height="24" alt="Checkmark">
+                            <span class="text-muted" style="font-size: 14px;">No specific time limits.</span>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- feature section ends here...  -->
+
+    <!-- pricing section... -->
+    <section class="py-5 bg-light">
+        <div class="container py-lg-5">
+
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold text-dark mb-3" style="font-size: 36px;">Choose Your Plan</h2>
+                <p class="text-muted mx-auto" style="max-width: 500px; font-size: 15px;">
+                    Let's choose the package that is best for you and explore it happily and cheerfully.
+                </p>
+            </div>
+
+            <div class="row justify-content-center">
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 d-flex align-items-stretch">
+                    <div class="card w-100 bg-white text-center d-flex flex-column justify-content-between p-4 p-xl-5 border rounded-lg"
+                        style="border-width: 2px !important;">
+                        <div>
+                            <img src="assets/Free.svg" class="img-fluid mb-4 mx-auto" alt="Free Plan Box"
+                                style="height: 150px; object-fit: contain;">
+                            <h4 class="font-weight-bold text-dark mb-4">Free Plan</h4>
+
+                            <div class="text-center">
+                                <ul class="list-unstyled text-left d-inline-block">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Unlimited Bandwidth</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Encrypted Connection</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets//Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">No Traffic Logs</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Works on All Devices</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h3 class="font-weight-bold text-dark mb-3">Free</h3>
+                            <a href="#" class="btn btn-outline-danger rounded-pill font-weight-bold px-5"
+                                style="border-width: 2px;">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 d-flex align-items-stretch">
+                    <div class="card w-100 bg-white text-center d-flex flex-column justify-content-between p-4 p-xl-5 border rounded-lg"
+                        style="border-width: 2px !important;">
+                        <div>
+                            <img src="assets/Free.svg" class="img-fluid mb-4 mx-auto" alt="Standard Plan Box"
+                                style="height: 150px; object-fit: contain;">
+                            <h4 class="font-weight-bold text-dark mb-4">Standard Plan</h4>
+
+                            <div class="text-center">
+                                <ul class="list-unstyled text-left d-inline-block">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Unlimited Bandwidth</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Encrypted Connection</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Yes Traffic Logs</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Works on All Devices</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Connect Anywhere</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h3 class="font-weight-bold text-dark mb-3">$9 <span
+                                    class="font-weight-normal text-muted h5">/ mo</span></h3>
+                            <a href="#" class="btn btn-outline-danger rounded-pill font-weight-bold px-5"
+                                style="border-width: 2px;">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-lg-4 mb-4 mb-lg-0 d-flex align-items-stretch">
+                    <div class="card w-100 bg-white text-center d-flex flex-column justify-content-between p-4 p-xl-5 border border-danger shadow-lg rounded-lg"
+                        style="border-width: 2px !important;">
+                        <div>
+                            <img src="assets/Free.svg" class="img-fluid mb-4 mx-auto" alt="Premium Plan Box"
+                                style="height: 150px; object-fit: contain;">
+                            <h4 class="font-weight-bold text-dark mb-4">Premium Plan</h4>
+
+                            <div class="text-center">
+                                <ul class="list-unstyled text-left d-inline-block">
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Unlimited Bandwidth</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Encrypted Connection</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Yes Traffic Logs</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Works on All Devices</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Connect Anywhere</span>
+                                    </li>
+                                    <li class="d-flex align-items-center mb-3">
+                                        <img src="assets/Group 1223.svg" class="mr-3" width="16" alt="Check">
+                                        <span class="text-muted small">Get New Features</span>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="mt-5">
+                            <h3 class="font-weight-bold text-dark mb-3">$12 <span
+                                    class="font-weight-normal text-muted h5">/ mo</span></h3>
+                            <a href="#" class="btn btn-danger rounded-pill font-weight-bold px-5 shadow-sm">Select</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- pricing section ends here...  -->
+
+    <!-- networks section... -->
+    <section id="network-section" class="py-5 bg-white">
+        <div class="container py-5">
+
+            <div class="row justify-content-center text-center mb-5">
+                <div class="col-md-8 col-lg-6">
+                    <h2 class="display-5 font-weight-bold text-dark mb-3" style="line-height: 1.3;">
+                        Huge Global Network <br class="d-none d-sm-inline"> of Fast VPN
+                    </h2>
+                    <p class="text-secondary small px-md-4">
+                        See LaslesVPN everywhere to make it easier for you when you move locations.
+                    </p>
+                </div>
+            </div>
+
+            <div class="row justify-content-center mb-5">
+                <div class="col-12 col-md-10 text-center">
+                    <img src="assets/Huge Global.svg" alt="Global VPN Network Map" class="img-fluid px-3">
+                </div>
+            </div>
+
+            <div class="row justify-content-center text-center mt-5 pt-4">
+                <div class="col-12 text-center">
+                    <img src="assets/Sponsored.svg" alt="Supported Platforms: Netflix, Reddit, Amazon, Discord, Spotify"
+                        class="img-fluid w-100" style="max-width: 900px; height: auto;">
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- network section ends here... -->
+
+    <!-- testimonials section...  -->
+    <section class="py-5 overflow-hidden">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="font-weight-bold text-dark">Trusted by Thousands of<br>Happy Customer</h2>
+                <p class="text-muted mx-auto" style="max-width: 550px;">These are the stories of our customers who have
+                    joined us with great pleasure when using this crazy feature.</p>
+            </div>
+
+            <div class="pr-lg-0">
+                <div class="row">
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 p-4 border border-danger shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/Ellipse 175.svg" alt="Viezh Robert" class="rounded-circle mr-3"
+                                        style="width: 50px; height: 50px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-0 font-weight-bold text-dark">Viezh Robert</h6>
+                                        <small class="text-muted">Warsaw, Poland</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-1 font-weight-bold text-dark">4.5</span>
+                                    <img src="assets/Star.svg" alt="star" style="width: 16px; height: 16px;">
+                                </div>
+                            </div>
+                            <p class="text-dark small mt-3 mb-0" style="line-height: 1.8;">“Wow... I am very happy to
+                                use this VPN, it turned out to be more than my expectations and so far there have been
+                                no problems. LaslesVPN always the best.”</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4">
+                        <div class="card h-100 p-4 border border-light shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/Ellipse 176.svg" alt="Yessica Christy" class="rounded-circle mr-3"
+                                        style="width: 50px; height: 50px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-0 font-weight-bold text-dark">Yessica Christy</h6>
+                                        <small class="text-muted">Shanxi, China</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-1 font-weight-bold text-dark">4.5</span>
+                                    <img src="assets/Star.svg" alt="star" style="width: 16px; height: 16px;">
+                                </div>
+                            </div>
+                            <p class="text-dark small mt-3 mb-0" style="line-height: 1.8;">“I like it because I like to
+                                travel far and still can connect with high speed.”</p>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4 mb-4 pr-lg-0">
+                        <div class="card h-100 p-4 border border-light shadow-sm">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <img src="assets/Ellipse 177.svg" alt="Kim Young Jou" class="rounded-circle mr-3"
+                                        style="width: 50px; height: 50px; object-fit: cover;">
+                                    <div>
+                                        <h6 class="mb-0 font-weight-bold text-dark">Kim Young Jou</h6>
+                                        <small class="text-muted">Seoul, South Korea</small>
+                                    </div>
+                                </div>
+                                <div class="d-flex align-items-center">
+                                    <span class="mr-1 font-weight-bold text-dark">4.5</span>
+                                    <img src="assets/Star.svg" alt="star" style="width: 16px; height: 16px;">
+                                </div>
+                            </div>
+                            <p class="text-dark small mt-3 mb-0" style="line-height: 1.8;">“This is very unusual for my
+                                business that currently requires a virtual private network that has high security.”</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-between align-items-center mt-3 px-1">
+                    <div class="d-flex align-items-center">
+                        <img src="assets/Union.svg" alt="Red line indicator" class="mr-2"
+                            style="width: 45px; height: 15px;">
+                        <img src="assets/Ellipse 172.svg" alt="dot" class="mr-2" style="width: 12px; height: 12px;">
+                        <img src="assets/Ellipse 172.svg" alt="dot" class="mr-2" style="width: 12px; height: 12px;">
+                        <img src="assets/Ellipse 172.svg" alt="dot" style="width: 12px; height: 12px;">
+                    </div>
+                    <div class="d-flex">
+                        <div class="mr-2" role="button">
+                            <img src="https://api.iconify.design/fluent:arrow-circle-left-48-regular.svg?color=%23f53838"
+                                alt="Left button image" style="width: 45px; height: 45px;">
+                        </div>
+                        <div role="button">
+                            <img src="https://api.iconify.design/fluent:arrow-circle-right-48-filled.svg?color=%23f53838"
+                                alt="Right button image" style="width: 45px; height: 45px;">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- testimonials section ends here...  -->
+
+    <!-- subscribe section...  -->
+    <div class="container position-relative" style="z-index: 10; margin-bottom: -90px;">
+        <div class="card border-0 shadow-lg p-5 rounded-lg">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-3 mb-lg-0">
+                    <h3 class="font-weight-bold text-dark">Subscribe Now for<br>Get Special Features!</h3>
+                    <p class="text-muted small mb-0 mt-2">Let's subscribe with us and find the fun.</p>
+                </div>
+                <div class="col-lg-5 text-lg-right">
+                    <a href="#" class="btn btn-danger btn-md px-5 py-3 shadow"
+                        style="background-color: #f53838; border-color: #f53838;">
+                        Subscribe Now
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- subscribe section ends here...  -->
+
+    <!-- footer...  -->
+    <footer class="bg-light pt-5 pb-5" style="padding-top: 150px !important;">
+        <div class="container pt-4">
+            <div class="row">
+                <div class="col-lg-5 mb-4 mb-lg-0">
+                    <div class="d-flex align-items-center mb-3">
+                        <img src="assets/Standard Collection 27.svg" alt="LaslesVPN Logo image" class="mr-2"
+                            style="width: 35px; height: 35px;">
+                        <span class="text-dark h5 mb-0">Lasles<strong class="font-weight-bolder">VPN</strong></span>
+                    </div>
+                    <p class="text-muted small mb-4" style="line-height: 1.8; max-width: 340px;">
+                        <strong>LaslesVPN</strong> is a private virtual network that has unique features and has high
+                        security.
+                    </p>
+                    <div class="d-flex mb-3">
+                        <a href="#" class="mr-0"><img src="assets/Facebook.svg" alt="Facebook social icon image"
+                                style="width: 63px; height: 63px;"></a>
+                        <a href="#" class="mr-0"><img src="assets/Twitter.svg" alt="Twitter social icon image"
+                                style="width: 63px; height: 63px;"></a>
+                        <a href="#"><img src="assets/Instagram.svg" alt="Instagram social icon image"
+                                style="width: 63px; height: 63px;"></a>
+                    </div>
+                    <p class="text-secondary small mt-4">©2020LaslesVPN</p>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+                    <h6 class="font-weight-bold text-dark mb-3">Product</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#" class="text-muted">Download</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Pricing</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Locations</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Server</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Countries</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Blog</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-2 mb-4 mb-lg-0">
+                    <h6 class="font-weight-bold text-dark mb-3">Engage</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#" class="text-muted">LaslesVPN ?</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">FAQ</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Tutorials</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">About Us</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Privacy Policy</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Terms of Service</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-lg-3">
+                    <h6 class="font-weight-bold text-dark mb-3">Earn Money</h6>
+                    <ul class="list-unstyled small">
+                        <li class="mb-2"><a href="#" class="text-muted">Affiliate</a></li>
+                        <li class="mb-2"><a href="#" class="text-muted">Become Partner</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer ends here...  -->
+
+
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
+        crossorigin="anonymous"></script>
+    <script>
+        document.body.style.fontFamily = "'Rubik', sans-serif";
+    </script>
+
+</body>
+
+</html>
