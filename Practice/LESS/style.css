@@ -1,0 +1,61 @@
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f0f2f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+.widget {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  max-width: 500px;
+  width: 100%;
+}
+.widget .widget-content {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+.widget .widget-content .widget-img {
+  width: 90px;
+  height: 90px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+  border: 3px solid #f0f2f5;
+}
+.widget .widget-content .widget-text {
+  text-align: left;
+}
+.widget .widget-content .widget-text h2 {
+  color: #e22d15;
+  margin-top: 0;
+  margin-bottom: 0.5rem;
+  font-size: 1.4rem;
+}
+.widget .widget-content .widget-text p {
+  color: #636e72;
+  font-size: 0.95rem;
+  line-height: 1.4;
+  margin-bottom: 1rem;
+}
+.widget .widget-content .widget-text .action-btn {
+  display: inline-block;
+  background: #e22d15;
+  color: #ffffff;
+  padding: 0.5rem 1.2rem;
+  border: none;
+  border-radius: 6px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+}
+.widget .widget-content .widget-text .action-btn:hover {
+  opacity: 0.9;
+  color: #ffffff;
+}
