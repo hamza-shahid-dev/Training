@@ -1,30 +1,583 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.scss">
-</head>
-<body>
-    <header class="mdc-top-app-bar">
-  <div class="mdc-top-app-bar__row">
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-start">
-      <button class="material-icons mdc-top-app-bar__navigation-icon mdc-icon-button" aria-label="Open navigation menu">menu</button>
-      <span class="mdc-top-app-bar__title">Page title</span>
-    </section>
-    <section class="mdc-top-app-bar__section mdc-top-app-bar__section--align-end" role="toolbar">
-      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Favorite">favorite</button>
-      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Search">search</button>
-      <button class="material-icons mdc-top-app-bar__action-item mdc-icon-button" aria-label="Options">more_vert</button>
-    </section>
-  </div>
-</header>
-<main class="mdc-top-app-bar--fixed-adjust">
-  App content
-</main>
+    <title>Offshore - Task 6</title>
 
-<script src="script.js"></script>
-    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+
+<body class="bg-light">
+
+    <!--Hero Section -->
+    <section class="py-4 overflow-hidden position-relative" style="z-index: 1;">
+        <div class="position-absolute top-0 start-0 end-0 bottom-0"
+            style="background-image: url('assets/BG1.svg'); background-size: cover; background-position: center; filter: blur(20px); transform: scale(1.05); z-index: -1;">
+        </div>
+
+        <div class="container">
+
+            <nav class="navbar navbar-expand-lg py-3">
+                <div class="container-fluid px-0">
+                    <a class="navbar-brand" href="#">
+                        <img src="assets/Logo.svg" alt="Offshore Logo" style="height: 35px;">
+                    </a>
+
+                    <button class="navbar-toggler border-0 shadow-none" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                        <ul class="navbar-nav align-items-lg-center gap-lg-4 me-4 my-3 my-lg-0">
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark fw-medium" href="#" role="button"
+                                    data-bs-toggle="dropdown">Service</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark fw-medium" href="#" role="button"
+                                    data-bs-toggle="dropdown">About us</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark fw-medium" href="#" role="button"
+                                    data-bs-toggle="dropdown">News</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle text-dark fw-medium" href="#" role="button"
+                                    data-bs-toggle="dropdown">Event list</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <a href="#" class="btn text-white rounded-pill px-4 py-2 fw-medium"
+                                style="background-color: #f76b1c;">Get in Touch</a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+
+            <div class="row align-items-center mt-4 pt-lg-2">
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h1 class="display-4 fw-bold text-dark lh-sm">
+                        Star-blue Company <br>
+                        <span class="position-relative d-inline-block">Offshore<span
+                                class="position-absolute start-0 w-100 bg-warning rounded-3"
+                                style="bottom: -6px; height: 6px;"></span></span>
+                    </h1>
+                    <p class="text-secondary fs-5 my-3">Comprehensive development service.</p>
+                    <div>
+                        <a href="#"
+                            class="btn text-white rounded-pill px-4 py-3 fw-medium d-inline-flex align-items-center gap-2"
+                            style="background-color: #f76b1c;">
+                            Download Quotes
+                            <img src="assets/Arrow.svg" alt="Arrow" style="width: 16px; height: 16px;">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center text-lg-end">
+                    <img src="assets/Header.svg" alt="Team collaborating in office" class="img-fluid"
+                        style="max-width: 500px;">
+                </div>
+            </div>
+
+            <div class="row align-items-center mt-4 pt-3 pb-4">
+                <div class="col-12">
+                    <p class="small fw-bold text-muted text-uppercase mb-3" style="letter-spacing: 0.5px;">200+ HAPPY
+                        CUSTOMER</p>
+                </div>
+
+                <div class="col-12">
+                    <div class="d-flex align-items-center justify-content-between gap-4 flex-nowrap">
+
+                        <div id="logoSlider"
+                            class="d-flex flex-nowrap align-items-center justify-content-lg-between gap-4 gap-lg-0 overflow-x-auto py-2 w-100"
+                            style="scrollbar-width: none; -ms-overflow-style: none; scroll-behavior: smooth;">
+                            <img src="assets/Rectangle 4.svg" alt="ABIT" class="img-fluid opacity-75 flex-shrink-0"
+                                style="max-height: 40px;">
+                            <img src="assets/Rectangle 5.svg" alt="Croit" class="img-fluid opacity-75 flex-shrink-0"
+                                style="max-height: 40px;">
+                            <img src="assets/Rectangle 6.svg" alt="RGG" class="img-fluid opacity-75 flex-shrink-0"
+                                style="max-height: 40px;">
+                            <img src="assets/Rectangle 7.svg" alt="Infordio" class="img-fluid opacity-75 flex-shrink-0"
+                                style="max-height: 40px;">
+                            <img src="assets/Rectangle 8.svg" alt="Intage" class="img-fluid opacity-75 flex-shrink-0"
+                                style="max-height: 40px;">
+                            <img src="assets/Rectangle 9.svg" alt="Fujitsu" class="img-fluid opacity-75 flex-shrink-0"
+                                style="max-height: 40px;">
+                            <img src="assets/Rectangle 10.svg" alt="Piped Bits"
+                                class="img-fluid opacity-75 flex-shrink-0" style="max-height: 40px;">
+                        </div>
+
+                        <div class="flex-shrink-0">
+                            <button id="slideRightBtn"
+                                class="btn btn-warning border-0 rounded-3 p-3 d-inline-flex align-items-center justify-content-center"
+                                type="button">
+                                <img src="assets/Button.svg" alt="Next" style="width: 30px; height: 16px;">
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- Development Section -->
+    <section class="py-5 bg-white">
+        <div class="container">
+            <div class="row g-4 align-items-stretch">
+
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5 bg-white d-flex flex-column justify-content-between h-100 position-relative overflow-hidden"
+                        style="border: 2px solid #dee2e6; border-radius: 20px; min-height: 320px;">
+                        <div>
+                            <h3 class="fw-bold text-dark mb-3" style="max-width: 350px;">What is offshore development?
+                            </h3>
+                            <p class="text-secondary mb-0"
+                                style="font-size: 0.95rem; line-height: 1.6; max-width: 350px;">
+                                Offshore development is a method of ordering from an overseas company to develop a
+                                system or software. Using this form, customers can not only save on recruitment and
+                                development costs, but also quickly find a source of high-quality engineers.
+                            </p>
+                        </div>
+                        <div class="d-flex justify-content-end mt-4 mt-lg-0"
+                            style="position: static; right: 20px; bottom: 15px;">
+                            <img src="assets/Globe.svg" alt="Global Network Icon"
+                                style="width: 110px; max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="p-4 p-md-5 text-dark d-flex flex-column justify-content-between h-100 position-relative overflow-hidden"
+                        style="background-color: #ffc107; border-radius: 20px; min-height: 320px;">
+                        <div>
+                            <h3 class="fw-bold mb-3" style="color: #111; max-width: 380px;">Star-blue will help you
+                                solve your problem!
+                            </h3>
+                            <ul class="list-unstyled mb-0"
+                                style="font-size: 0.95rem; line-height: 1.8; max-width: 380px;">
+                                <li class="mb-1">• Reduce development costs. <span
+                                        style="font-size: 0.85rem; opacity: 0.85;">-Adopted during system
+                                        development</span></li>
+                                <li class="mb-1">• Lack of engineers</li>
+                                <li class="mb-1">• No software development experience</li>
+                                <li>• I just want to hire an engineer in a short time</li>
+                            </ul>
+                        </div>
+                        <div class="d-flex justify-content-end mt-4 mt-lg-0">
+                            <img src="assets/Rocket.svg" alt="Rocket Icon"
+                                style="width: 100px; max-width: 100%; height: auto;">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Another Section -->
+    <section class="py-5 position-relative overflow-hidden" style="z-index: 1;">
+        <div class="position-absolute top-0 start-0 end-0 bottom-0"
+            style="background-image: url('assets/BG1.svg'); background-size: cover; background-position: center; filter: blur(25px); transform: scale(1.05); z-index: -1;">
+        </div>
+
+        <div class="container py-4">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-5 text-center">
+                    <img src="assets/Header2.svg" alt="Team members collaborating" class="shadow-sm img-fluid"
+                        style="border-top-left-radius: 180px; border-top-right-radius: 180px; border-bottom-left-radius: 20px; border-bottom-right-radius: 20px; object-fit: cover; width: 100%; max-width: 420px; height: 480px;">
+                </div>
+
+                <div class="col-lg-7">
+                    <h2 class="fw-bold text-dark display-6 mb-4 lh-base">
+                        Star-blue <span style="color: #f76b1c;">provides</span> <br>
+                        a development form <br>
+                        suitable for KH requirements
+                    </h2>
+
+                    <div class="table-responsive">
+                        <table class="table align-middle border-0 mb-4 bg-transparent">
+                            <thead>
+                                <tr class="border-bottom">
+                                    <th scope="col" class="bg-transparent text-secondary fw-semibold w-25 pb-3"></th>
+                                    <th scope="col" class="bg-transparent fw-bold fs-4 text-dark pb-3">
+                                        <span class="position-relative d-inline-block">Labo<span
+                                                class="position-absolute start-0 w-100 rounded-2"
+                                                style="bottom: -4px; height: 4px; background-color: #f76b1c;"></span></span>
+                                    </th>
+                                    <th scope="col" class="bg-transparent fw-bold fs-4 text-dark pb-3">
+                                        <span class="position-relative d-inline-block">Project based<span
+                                                class="position-absolute start-0 w-100 rounded-2"
+                                                style="bottom: -4px; height: 4px; background-color: #ffc107;"></span></span>
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="border-bottom">
+                                    <td class="fw-bold text-dark py-3">Shape</td>
+                                    <td class="text-secondary py-3">• Power x time</td>
+                                    <td class="text-secondary py-3">• Product-based contract</td>
+                                </tr>
+                                <tr class="border-bottom-0">
+                                    <td class="fw-bold text-dark py-3 align-top">Characteristic</td>
+                                    <td class="text-secondary py-3 align-top">
+                                        • Form a team in a week<br>
+                                        • Accumulate development experience for long-term projects<br>
+                                        • Easily change requirements
+                                    </td>
+                                    <td class="text-secondary py-3 align-top">
+                                        • Ease of cost control<br>
+                                        • Quick product confirmation<br>
+                                        • Product quality assurance is handled by the development team
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <div>
+                        <a href="#" class="btn rounded-pill px-4 py-2 fw-medium text-dark bg-white border"
+                            style="border-color: #f76b1c !important; color: #f76b1c !important;">
+                            Contact us for a quotes
+                        </a>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Another Section -->
+    <section class="position-relative text-white overflow-visible"
+        style="background-color: #f76b1c; padding-top: 50px; padding-bottom: 50px;">
+        <div class="container position-relative" style="z-index: 2;">
+            <div class="row align-items-center">
+
+                <div class="col-lg-6 mb-4 mb-lg-0">
+                    <h2 class="fs-2 mb-3 lh-sm">
+                        <span class="fw-bold d-block">Star-blue offers offshore services</span>
+                        <span class="fw-normal fs-4 d-block text-white">in many development areas</span>
+                    </h2>
+                    <p class="text-white-50 fs-6 mb-0" style="max-width: 380px; line-height: 1.4;">
+                        As our customers' partner, we support everything from design, development, to maintenance.
+                    </p>
+                </div>
+
+                <div class="col-lg-6 mt-4 mt-lg-0">
+                    <div class="row g-3 justify-content-center justify-content-lg-end">
+
+                        <div class="col-6 col-sm-5 d-flex flex-column align-items-center">
+                            <div class="bg-white rounded-4 shadow-sm text-center d-flex align-items-center justify-content-center fw-bold fs-5 w-100"
+                                style="height: 110px; color: #f76b1c !important; max-width: 200px;">System</div>
+
+                            <div class="bg-white rounded-4 shadow-sm text-center d-flex align-items-center justify-content-center fw-bold fs-5 w-100"
+                                style="height: 110px; color: #f76b1c !important; max-width: 200px; margin-top: 25px;">
+                                Blockchain</div>
+                        </div>
+
+                        <div class="col-6 col-sm-5 d-flex flex-column align-items-center mt-3 mt-lg-0">
+                            <div class="bg-white rounded-4 shadow-sm text-center d-flex align-items-center justify-content-center fw-bold fs-5 w-100"
+                                style="height: 110px; color: #f76b1c !important; max-width: 200px;">Application</div>
+
+                            <div class="bg-white rounded-4 shadow-sm text-center d-flex align-items-center justify-content-center fw-bold fs-5 w-100"
+                                style="height: 110px; color: #f76b1c !important; max-width: 200px; margin-top: 25px;">AI
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Presentation Section -->
+    <section class="py-5 bg-white" style="padding-top: 80px !important;">
+        <div class="container py-4 mt-3">
+            <div class="row align-items-center g-5">
+
+                <div class="col-lg-6">
+                    <h2 class="fw-bold text-dark display-6 mb-3 lh-sm">
+                        <span style="color: #f76b1c;">Star-blue</span> Video<br>
+                        Presentation
+                    </h2>
+                    <p class="text-secondary fs-6 mb-4" style="max-width: 420px; line-height: 1.6;">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                    <div>
+                        <a href="#" class="btn rounded-pill px-4 py-2 fw-medium bg-white"
+                            style="border: 1px solid #f76b1c; color: #f76b1c;">
+                            Contact us for a quotes
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 text-center">
+                    <div class="position-relative d-inline-block w-100" style="max-width: 500px;">
+                        <img src="assets/Header3.svg" alt="Video presentation sketch illustration"
+                            class="img-fluid rounded-4 object-fit-cover w-100" style="height: 320px;">
+                        <div class="position-absolute top-50 start-50 translate-middle bg-white bg-opacity-75 rounded-circle shadow d-flex align-items-center justify-content-center cursor-pointer"
+                            style="width: 65px; height: 65px;">
+                            <div
+                                style="width: 0; height: 0; border-top: 10px solid transparent; border-bottom: 10px solid transparent; border-left: 16px solid #f76b1c; margin-left: 3px;">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="text-center py-5" style="background-color: #ffb800; color: #ffffff;">
+        <div class="container py-4">
+            <h2 class="fw-bold fs-1 mb-3 text-white">Contact us for a quotes</h2>
+            <p class="text-white mb-4 mx-auto" style="max-width: 550px; line-height: 1.6;">
+                Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis
+                enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+            </p>
+            <a href="#" class="btn rounded-pill px-5 py-2.5 fw-bold shadow-sm"
+                style="background-color: #ffffff; color: #ffb800 !important; border: none;">
+                Get Now
+            </a>
+        </div>
+    </section>
+
+
+    <!-- Contact Process Section -->
+    <section class="py-5 bg-white">
+        <div class="container text-center">
+            <h2 class="fw-bold mb-5" style="color: #f76b1c;">Contact Process</h2>
+
+            <div class="d-flex flex-wrap justify-content-center align-items-center gap-2">
+
+                <div class="bg-white rounded-4 shadow-sm border border-1 border-light-subtle p-3 text-center d-flex align-items-center justify-content-center"
+                    style="width: 160px; height: 90px;">
+                    <span class="fw-bold fs-6 text-dark" style="line-height: 1.3;">Estimate inquiry</span>
+                </div>
+                <div class="px-1">
+                    <span class="fs-5 fw-bold" style="color: #f76b1c;">&#10148;</span>
+                </div>
+
+                <div class="bg-white rounded-4 shadow-sm border border-1 border-light-subtle p-3 text-center d-flex align-items-center justify-content-center"
+                    style="width: 160px; height: 90px;">
+                    <span class="fw-bold fs-6 text-dark" style="line-height: 1.3;">Both problems Meeting</span>
+                </div>
+                <div class="px-1">
+                    <span class="fs-5 fw-bold" style="color: #f76b1c;">&#10148;</span>
+                </div>
+
+                <div class="bg-white rounded-4 shadow-sm border border-1 border-light-subtle p-3 text-center d-flex align-items-center justify-content-center"
+                    style="width: 160px; height: 90px;">
+                    <span class="fw-bold fs-6 text-dark" style="line-height: 1.3;">Consulty Estimate</span>
+                </div>
+                <div class="px-1">
+                    <span class="fs-5 fw-bold" style="color: #f76b1c;">&#10148;</span>
+                </div>
+
+                <div class="bg-white rounded-4 shadow-sm border border-1 border-light-subtle p-3 text-center d-flex align-items-center justify-content-center"
+                    style="width: 160px; height: 90px;">
+                    <span class="fw-bold fs-6 text-dark" style="line-height: 1.3;">Development team Launch</span>
+                </div>
+                <div class="px-1">
+                    <span class="fs-5 fw-bold" style="color: #f76b1c;">&#10148;</span>
+                </div>
+
+                <div class="bg-white rounded-4 shadow-sm border border-1 border-light-subtle p-3 text-center d-flex align-items-center justify-content-center"
+                    style="width: 160px; height: 90px;">
+                    <span class="fw-bold fs-6 text-dark" style="line-height: 1.3;">Signature</span>
+                </div>
+                <div class="px-1">
+                    <span class="fs-5 fw-bold" style="color: #f76b1c;">&#10148;</span>
+                </div>
+
+                <div class="bg-white rounded-4 shadow-sm border border-1 border-light-subtle p-3 text-center d-flex align-items-center justify-content-center"
+                    style="width: 160px; height: 90px;">
+                    <span class="fw-bold fs-6 text-dark" style="line-height: 1.3;">Development -Operation</span>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Download Section -->
+    <section class="py-5 mb-5 bg-light">
+        <div class="container">
+            <h2 class="fw-bold text-center text-dark mb-5">Document Download-Quotation Contact</h2>
+
+            <div class="row g-4 align-items-stretch">
+                <div class="col-lg-6">
+                    <div
+                        class="bg-white border border-light-subtle rounded-4 shadow-sm position-relative p-4 p-md-5 h-100">
+                        <h3 class="fw-bold text-dark mb-2">Document</h3>
+                        <p class="text-secondary mb-4" style="font-size: 0.95rem;">See company introduction / case study
+                            /</p>
+                        <a href="#" class="btn text-white rounded-pill px-4 py-2 fw-medium mb-3"
+                            style="background-color: #f76b1c;">Download</a>
+                        <img src="assets/Document.svg" alt="Document Icon" class="position-absolute"
+                            style="right: 35px; bottom: 35px; width: 75px; height: auto;">
+                    </div>
+                </div>
+
+                <div class="col-lg-6">
+                    <div class="rounded-4 shadow-sm position-relative p-4 p-md-5 h-100"
+                        style="background-color: #ffc107;">
+                        <h3 class="fw-bold mb-2 text-dark">Quotation</h3>
+                        <p class="text-dark opacity-75 mb-4" style="font-size: 0.95rem;">Contact information</p>
+                        <a href="#"
+                            class="btn rounded-pill px-4 py-2 fw-medium bg-white text-dark shadow-sm mb-3">Download</a>
+                        <img src="assets/Plane.svg" alt="Quotation Icon" class="position-absolute"
+                            style="right: 35px; bottom: 35px; width: 75px; height: auto;">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Footer Section -->
+    <footer class="text-white pt-5" style="background-color: #111111;">
+        <div class="container py-4">
+            <div class="row g-4 justify-content-between">
+
+                <div class="col-lg-4 col-md-6 mb-4 mb-lg-0">
+                    <h3 class="fw-bold fs-3 mb-3">
+                        <span class="text-white">OFF</span><span style="color: #f76b1c;">Shore.</span>
+                    </h3>
+                    <p class="text-white-50 fs-6 pe-lg-4" style="line-height: 1.6;">
+                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia
+                        consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
+                    </p>
+                </div>
+
+                <div class="col-lg-2 col-md-3 col-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3 fs-5">Services</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">Ui/Ux Design</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">FrontEnd Develop</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">Wordpress Building</a>
+                        </li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">Auto bot</a></li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-6 mb-4 mb-md-0">
+                    <h5 class="fw-bold mb-3 fs-5">Contact</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-3">
+                        <li class="d-flex align-items-center gap-2 text-white-50">
+                            <span
+                                class="d-inline-flex align-items-center justify-content-center rounded-circle bg-dark p-2"
+                                style="width: 32px; height: 32px;">📞</span>
+                            <span>99 88 99 66 99</span>
+                        </li>
+                        <li class="d-flex align-items-center gap-2 text-white-50">
+                            <span
+                                class="d-inline-flex align-items-center justify-content-center rounded-circle bg-dark p-2"
+                                style="width: 32px; height: 32px;">✉️</span>
+                            <span>ui4free@gmail.com</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-lg-2 col-md-12">
+                    <h5 class="fw-bold mb-3 fs-5">Information</h5>
+                    <ul class="list-unstyled d-flex flex-column gap-2">
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">Cookies</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">Tearm</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">FAQ</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">Sale</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none hover-white">Affilate</a></li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+
+        <div class="py-3 mt-4" style="background-color: #1a1a1a; border-top: 1px solid #222222;">
+            <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+
+                <p class="text-white-50 mb-0 fs-6">
+                    © ui4free.com 2022
+                </p>
+
+                <div class="d-flex align-items-center gap-3">
+                    <a href="#"
+                        class="text-white text-opacity-75 text-hover-white d-inline-flex align-items-center justify-content-center"
+                        style="width: 24px; height: 24px;" aria-label="LinkedIn">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="text-white text-opacity-75 text-hover-white d-inline-flex align-items-center justify-content-center"
+                        style="width: 24px; height: 24px;" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="text-white text-opacity-75 text-hover-white d-inline-flex align-items-center justify-content-center"
+                        style="width: 24px; height: 24px;" aria-label="YouTube">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="text-white text-opacity-75 text-hover-white d-inline-flex align-items-center justify-content-center"
+                        style="width: 24px; height: 24px;" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+                        </svg>
+                    </a>
+
+                    <a href="#"
+                        class="text-white text-opacity-75 text-hover-white d-inline-flex align-items-center justify-content-center"
+                        style="width: 24px; height: 24px;" aria-label="Twitter">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" fill="currentColor"
+                            viewBox="0 0 24 24">
+                            <path
+                                d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z" />
+                        </svg>
+                    </a>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        document.getElementById('slideRightBtn').addEventListener('click', function () {
+            const slider = document.getElementById('logoSlider');
+            slider.scrollBy({ left: 250, behavior: 'smooth' });
+        });
+    </script>
 </body>
+
 </html>
